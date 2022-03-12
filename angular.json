@@ -39,7 +39,7 @@
               "libraryName": "products",
               "libraryTarget": "umd"
             },
-            "deployUrl": "http://localhost:4200/"
+            "baseHref": "http://localhost:4200/"
           },
           "configurations": {
             "production": {
