@@ -4,7 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { APP_BASE_HREF } from '@angular/common';
+import { ProductsModule } from './pages/products/products.module';
+import { DetailsModule } from './pages/products/details/details.module';
 
 @NgModule({
   declarations: [
@@ -13,9 +14,10 @@ import { APP_BASE_HREF } from '@angular/common';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ProductsModule,
+    DetailsModule
   ],
-  providers: [{provide: APP_BASE_HREF, useValue: '/'}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
