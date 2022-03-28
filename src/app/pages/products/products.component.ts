@@ -8,7 +8,7 @@ import { Product } from './interfaces/product.interface';
   template: `
   <ng-container *ngIf="products$ | async as products; else loading">
     <div class="row">
-    <div class="col-sm-4 d-flex my-3 align-items-stretch" *ngFor="let product of products;trackBy:trackBy">
+    <div class="col-sm-3 d-flex my-3 align-items-stretch" *ngFor="let product of products;trackBy:trackBy">
       <app-product-card [product]="product"></app-product-card>
     </div>
     </div>
